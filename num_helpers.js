@@ -9,6 +9,9 @@ const main = (y) => {
     if (prime(c)==true) {
       types.push("prime")
     }
+    if(fizz(c)==true){
+      types.push("Fizz")
+    }
     console.log(c, types);
   }
 }
@@ -19,6 +22,12 @@ var odd = (n) => {
   if (n%2 == 0) {
     return false
   } else{
+    return true
+  }
+}
+
+var fizz=(n)=>{
+  if(n%3==0){
     return true
   }
 }
