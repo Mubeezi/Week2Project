@@ -12,6 +12,12 @@ const main = (y) => {
     if(fizz(c)==true){
       types.push("Fizz")
     }
+    if(buzz(c)==true){
+      types.push("Buzz")
+    }
+    if(fizzbuzz(c)==true){
+      types.push("FizzBuzz")
+    }
     console.log(c, types);
   }
 }
@@ -32,6 +38,18 @@ var fizz=(n)=>{
   }
 }
 
+var buzz=(n)=>{
+  if(n%5==0 && n%3!=0){
+    return true
+  }
+}
+
+var fizzbuzz=(n)=>{
+  if(n%5==0 && n%3==0){
+    return true
+  }
+}
+
 var prime = (n) => {
      for (var x = 2; x < n; x++) {
        // console.log(x);
@@ -46,4 +64,4 @@ var prime = (n) => {
 
 
 
-main(21);
+main(100);
